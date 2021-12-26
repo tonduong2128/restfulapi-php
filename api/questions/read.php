@@ -7,13 +7,16 @@
     $db = new Db();
     $connect = $db->connect();
     $question = new Question($connect);
+
     $read = $question->read();
+
     $num = $read->rowCount(); //trong PDO luôn
     if ($num > 0){
         $question_array = [];
         while ($row = $read->fetch(PDO::FETCH_ASSOC)){
             extract($row); //Trong PDO, giải các thành phần bên trong ra. để có thể dùng $id,...
             $question_item = [
+                'title' => $title,
                 'id' => $id,
                 'a' => $a,
                 'b' => $b,

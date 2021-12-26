@@ -25,3 +25,10 @@
         Cho phép trang nào lấy dữ liệu. // *:tất cả
     2. header("Content-type: aplication/json");
         Kểu trả về
+3 : Show API | Restful API PHP
+
+4 : Create API | Restful API PHP
+    1. $data = json_decode(file_get_contents('php://input')); //lấy dữ liệu từ json gửi lên còn qua form là dùng $_POST
+    2. $query = "INSERT INTO tbl_questions SET title=:title, a=:a, b=:b, c=:c, d=:d, answer=:answer"; //trong PDO viết z khác với pdo
+5 : Update và delete dữ liệu | Restful API PHP
+    1. PUT
