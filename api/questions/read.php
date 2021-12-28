@@ -26,6 +26,6 @@
             ];
             array_push($question_array, $question_item); //thêm vào mảng
         }
-        echo json_encode(["data" => $question_array]);
+        echo json_encode(["questions" => $question_array]);
     }
 ?>

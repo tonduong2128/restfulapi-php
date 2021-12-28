@@ -6,7 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thi trắc nghiệm an toàn giao thông</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .root > .title{
+        text-align: center;
+        padding: 20px;
+    }
+    .question{
+        font-size: 16px;
+        padding: 10px 0 10px 20px;
+    }
+    .question .title{
+        text-transform: capitalize;
+    }
+    .question .answer{
+        list-style: none;
+        padding-left: 16px;
+    }
+    .question .answer li{
+        padding:2px 0px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    .question .answer li input{
+        padding: 2px;
+        margin-right: 8px;
+    }
+    .question .answer li label{
+        text-transform: capitalize;
+    }
+
+    .btn{
+        padding: 6px 10px;
+        font-size: 20px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        opacity: 1;
+        cursor: pointer;
+        transition: all linear 0.2s ;
+    }
+    .btn:hover{
+        background-color: rgb(240, 81, 35);
+        color: white;
+    }
+    .btn-fix{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    }
+    .separate{
+        padding: 20px 0;
+    }
+    input[type='radio'] ~ label:hover{
+        color: red;
+    }
+</style>
 <body>
-    
+    <div class="root">
+        <h1 class="title">Cuộc thi thử vận may</h1>
+
+        <div class="questions">
+        </div>
+
+        <div>
+            <button class="btn btn-pre"> <= Preview question</button>
+            <button class="btn btn-next">Next question =></button>
+        </div>
+        <button class="btn btn-fix btn-submit">Submit</button>
+        <button class="btn btn-fix btn-refresh" hidden>Refresh</button>
+
+        <div class="separate">
+        </div>
+    </div>
+    <script src="./index.js" >
+    </script>
 </body>
 </html>

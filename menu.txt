@@ -32,3 +32,5 @@
     2. $query = "INSERT INTO tbl_questions SET title=:title, a=:a, b=:b, c=:c, d=:d, answer=:answer"; //trong PDO viết z khác với pdo
 5 : Update và delete dữ liệu | Restful API PHP
     1. PUT
+6 : App trắc nghiệm với Javascript + restful Api | Restful API PHP
+    
